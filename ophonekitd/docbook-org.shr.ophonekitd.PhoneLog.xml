@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "//OASIS//DTD DocBook XML V4.3//EN" "http://www.oasis-open.org/docbook/xml/4.3/docbookx.dtd">
+<reference id="shr-ophonekitd-phonelog-interface">
+  <title>SHR ophonekitd PhoneLog Interface</title>
+  <refentry id="PhoneLog">
+    <refmeta>
+      <refentrytitle role="top_of_page">org.shr.ophonekitd.PhoneLog</refentrytitle>
+    </refmeta>
+    <refnamediv>
+      <refname>org.shr.ophonekitd.PhoneLog</refname>
+      <refpurpose>PhoneLog interface</refpurpose>
+    </refnamediv>
+    <refsynopsisdiv role="synopsis">
+      <title role="synopsis.title">Methods</title>
+      <synopsis><link linkend="PhoneLog.DisplayList">DisplayList</link> (in  'a{sv}'filter)
+</synopsis>
+    </refsynopsisdiv>
+    <refsect1 role="impl_interfaces">
+      <title role="impl_interfaces.title">Implemented Interfaces</title>
+      <para>org.shr.ophonekitd.PhoneLog implements
+    org.freedesktop.DBus.Introspectable,
+    org.freedesktop.DBus.Properties
+    </para>
+    </refsect1>
+    <refsect1 role="properties">
+      <title role="properties.title">Properties</title>
+      <synopsis/>
+    </refsect1>
+    <refsect1 role="details">
+      <title role="details.title">Details</title>
+      <refsect2>
+        <title><anchor role="function" id="PhoneLog.DisplayList"/>DisplayList ()</title>
+        <indexterm>
+          <primary>DisplayList</primary>
+          <secondary>PhoneLog</secondary>
+        </indexterm>
+        <programlisting>DisplayList (in  'a{sv}' filter)</programlisting>
+        <variablelist role="params">
+          <varlistentry>
+            <term><parameter>filter</parameter>:</term>
+            <listitem>
+              <para>
+					List of filter attributes to limit the
+					list of calls to be shown.
+				</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </refsect2>
+    </refsect1>
+  </refentry>
+</reference>

@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<node name="/" xmlns:fso="http://www.freesmartphone.org/schemas/DBusSpecExtension" xmlns:doc="http://www.freedesktop.org/dbus/1.0/doc.dtd" doc:id="shr-ophonekitd-callmanagement-interface">
+
+<doc:doc>
+  <doc:summary>SHR ophonekitd CallManagement Interface</doc:summary>
+  <doc:version>0.0.0.1</doc:version>
+</doc:doc>
+
+<interface name="org.shr.ophonekitd.CallManagement">
+</interface>
+</node>
+

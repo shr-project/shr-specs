@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "//OASIS//DTD DocBook XML V4.3//EN" "http://www.oasis-open.org/docbook/xml/4.3/docbookx.dtd">
+<reference id="shr-ophonekitd-contacts-interface">
+  <title>SHR ophonekitd Contacts Interface</title>
+  <refentry id="Contacts">
+    <refmeta>
+      <refentrytitle role="top_of_page">org.shr.ophonekitd.Contacts</refentrytitle>
+    </refmeta>
+    <refnamediv>
+      <refname>org.shr.ophonekitd.Contacts</refname>
+      <refpurpose>Contacts interface</refpurpose>
+    </refnamediv>
+    <refsynopsisdiv role="synopsis">
+      <title role="synopsis.title">Methods</title>
+      <synopsis><link linkend="Contacts.DisplayList">DisplayList</link>   (in  'a{sv}'filter)
+<link linkend="Contacts.DisplayItem">DisplayItem</link>   (in  's'path)
+<link linkend="Contacts.CreateContact">CreateContact</link> (in  'a{sv}'values,
+               out 's'path)
+<link linkend="Contacts.EditContact">EditContact</link>   (in  's'path)
+</synopsis>
+    </refsynopsisdiv>
+    <refsect1 role="impl_interfaces">
+      <title role="impl_interfaces.title">Implemented Interfaces</title>
+      <para>org.shr.ophonekitd.Contacts implements
+    org.freedesktop.DBus.Introspectable,
+    org.freedesktop.DBus.Properties
+    </para>
+    </refsect1>
+    <refsect1 role="properties">
+      <title role="properties.title">Properties</title>
+      <synopsis/>
+    </refsect1>
+    <refsect1 role="details">
+      <title role="details.title">Details</title>
+      <refsect2>
+        <title><anchor role="function" id="Contacts.DisplayList"/>DisplayList ()</title>
+        <indexterm>
+          <primary>DisplayList</primary>
+          <secondary>Contacts</secondary>
+        </indexterm>
+        <programlisting>DisplayList (in  'a{sv}' filter)</programlisting>
+        <variablelist role="params">
+          <varlistentry>
+            <term><parameter>filter</parameter>:</term>
+            <listitem>
+              <para>
+					List of filter attributes to limit the
+					list of contacts to be shown.
+				</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </refsect2>
+      <refsect2>
+        <title><anchor role="function" id="Contacts.DisplayItem"/>DisplayItem ()</title>
+        <indexterm>
+          <primary>DisplayItem</primary>
+          <secondary>Contacts</secondary>
+        </indexterm>
+        <programlisting>DisplayItem (in  's' path)</programlisting>
+        <variablelist role="params">
+          <varlistentry>
+            <term><parameter>path</parameter>:</term>
+            <listitem>
+              <para>
+					the DBus path of the contact to show
+				</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </refsect2>
+      <refsect2>
+        <title><anchor role="function" id="Contacts.CreateContact"/>CreateContact ()</title>
+        <indexterm>
+          <primary>CreateContact</primary>
+          <secondary>Contacts</secondary>
+        </indexterm>
+        <programlisting>CreateContact (in  'a{sv}' values,
+               out 's'     path)</programlisting>
+        <variablelist role="params">
+          <varlistentry>
+            <term><parameter>values</parameter>:</term>
+            <listitem>
+              <para>
+					Values to be prefilled for the new contact
+				</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term><parameter>path</parameter>:</term>
+            <listitem>
+              <para>
+					the DBus path of the freshly created contact
+				</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </refsect2>
+      <refsect2>
+        <title><anchor role="function" id="Contacts.EditContact"/>EditContact ()</title>
+        <indexterm>
+          <primary>EditContact</primary>
+          <secondary>Contacts</secondary>
+        </indexterm>
+        <programlisting>EditContact (in  's' path)</programlisting>
+        <variablelist role="params">
+          <varlistentry>
+            <term><parameter>path</parameter>:</term>
+            <listitem>
+              <para>
+					the DBus path for the contact to be edited
+				</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </refsect2>
+    </refsect1>
+  </refentry>
+</reference>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "//OASIS//DTD DocBook XML V4.3//EN" "http://www.oasis-open.org/docbook/xml/4.3/docbookx.dtd">
+<reference id="shr-ophonekitd-callmanagement-interface">
+  <title>SHR ophonekitd CallManagement Interface</title>
+  <refentry id="CallManagement">
+    <refmeta>
+      <refentrytitle role="top_of_page">org.shr.ophonekitd.CallManagement</refentrytitle>
+    </refmeta>
+    <refnamediv>
+      <refname>org.shr.ophonekitd.CallManagement</refname>
+      <refpurpose>CallManagement interface</refpurpose>
+    </refnamediv>
+    <refsynopsisdiv role="synopsis">
+      <title role="synopsis.title">Methods</title>
+      <synopsis/>
+    </refsynopsisdiv>
+    <refsect1 role="impl_interfaces">
+      <title role="impl_interfaces.title">Implemented Interfaces</title>
+      <para>org.shr.ophonekitd.CallManagement implements
+    org.freedesktop.DBus.Introspectable,
+    org.freedesktop.DBus.Properties
+    </para>
+    </refsect1>
+    <refsect1 role="properties">
+      <title role="properties.title">Properties</title>
+      <synopsis/>
+    </refsect1>
+    <refsect1 role="details">
+      <title role="details.title">Details</title>
+    </refsect1>
+  </refentry>
+</reference>
