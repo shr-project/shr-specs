@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<node name="/" xmlns:fso="http://www.freesmartphone.org/schemas/DBusSpecExtension" xmlns:doc="http://www.freedesktop.org/dbus/1.0/doc.dtd" doc:id="shr-ophonekitd-dialer-interface">
+
+<doc:doc>
+  <doc:summary>SHR phoneuid Dialer Interface</doc:summary>
+  <doc:version>0.0.0.1</doc:version>
+</doc:doc>
+
+<interface name="org.shr.phoneuid.Dialer">
+	<doc:doc>
+		<doc:para>
+			The Dialer Interface is used to show the Dialer screen
+			- optionally prefilled with some values
+		</doc:para>
+	</doc:doc>
+
+	<method name="Display" implementation="mandatory">
+		<annotation name="org.freedesktop.DBus.GLib.Async" value="true" />
+		<arg type="a{sv}" name="values" direction="in">
+			<doc:doc>
+				<doc:summary>
+					Values to prefill the Dialer screen with
+				</doc:summary>
+			</doc:doc>
+		</arg>
+	</method>
+</interface>
+</node>
+
+

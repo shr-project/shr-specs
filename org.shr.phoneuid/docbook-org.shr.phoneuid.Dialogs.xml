@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "//OASIS//DTD DocBook XML V4.3//EN" "http://www.oasis-open.org/docbook/xml/4.3/docbookx.dtd">
+<reference id="shr-ophonekitd-dialogs-interface">
+  <title>SHR phoneuid Dialogs Interface</title>
+  <refentry id="Dialogs">
+    <refmeta>
+      <refentrytitle role="top_of_page">org.shr.phoneuid.Dialogs</refentrytitle>
+    </refmeta>
+    <refnamediv>
+      <refname>org.shr.phoneuid.Dialogs</refname>
+      <refpurpose>Dialogs interface</refpurpose>
+    </refnamediv>
+    <refsynopsisdiv role="synopsis">
+      <title role="synopsis.title">Methods</title>
+      <synopsis><link linkend="Dialogs.DisplaySimAuth">DisplaySimAuth</link> (in  'i'status)
+<link linkend="Dialogs.HideSimAuth">HideSimAuth</link>    (in  'i'status)
+<link linkend="Dialogs.DisplayUssd">DisplayUssd</link>    (in  'i'mode,
+                in  's'message)
+<link linkend="Dialogs.DisplayDialog">DisplayDialog</link>  (in  'i'dialog)
+</synopsis>
+    </refsynopsisdiv>
+    <refsect1 role="impl_interfaces">
+      <title role="impl_interfaces.title">Implemented Interfaces</title>
+      <para>org.shr.phoneuid.Dialogs implements
+    org.freedesktop.DBus.Introspectable,
+    org.freedesktop.DBus.Properties
+    </para>
+    </refsect1>
+    <refsect1 role="properties">
+      <title role="properties.title">Properties</title>
+      <synopsis/>
+    </refsect1>
+    <refsect1 role="details">
+      <title role="details.title">Details</title>
+      <refsect2>
+        <title><anchor role="function" id="Dialogs.DisplaySimAuth"/>DisplaySimAuth ()</title>
+        <indexterm>
+          <primary>DisplaySimAuth</primary>
+          <secondary>Dialogs</secondary>
+        </indexterm>
+        <programlisting>DisplaySimAuth (in  'i' status)</programlisting>
+        <variablelist role="params">
+          <varlistentry>
+            <term><parameter>status</parameter>:</term>
+            <listitem>
+              <para/>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </refsect2>
+      <refsect2>
+        <title><anchor role="function" id="Dialogs.HideSimAuth"/>HideSimAuth ()</title>
+        <indexterm>
+          <primary>HideSimAuth</primary>
+          <secondary>Dialogs</secondary>
+        </indexterm>
+        <programlisting>HideSimAuth (in  'i' status)</programlisting>
+        <variablelist role="params">
+          <varlistentry>
+            <term><parameter>status</parameter>:</term>
+            <listitem>
+              <para/>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </refsect2>
+      <refsect2>
+        <title><anchor role="function" id="Dialogs.DisplayUssd"/>DisplayUssd ()</title>
+        <indexterm>
+          <primary>DisplayUssd</primary>
+          <secondary>Dialogs</secondary>
+        </indexterm>
+        <programlisting>DisplayUssd (in  'i' mode,
+             in  's' message)</programlisting>
+        <variablelist role="params">
+          <varlistentry>
+            <term><parameter>mode</parameter>:</term>
+            <listitem>
+              <para/>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term><parameter>message</parameter>:</term>
+            <listitem>
+              <para/>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </refsect2>
+      <refsect2>
+        <title><anchor role="function" id="Dialogs.DisplayDialog"/>DisplayDialog ()</title>
+        <indexterm>
+          <primary>DisplayDialog</primary>
+          <secondary>Dialogs</secondary>
+        </indexterm>
+        <programlisting>DisplayDialog (in  'i' dialog)</programlisting>
+        <variablelist role="params">
+          <varlistentry>
+            <term><parameter>dialog</parameter>:</term>
+            <listitem>
+              <para/>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </refsect2>
+    </refsect1>
+  </refentry>
+</reference>

@@ -1,5 +1,4 @@
-SUBDIRS := \
-	ophonekitd
+SUBDIRS := org.shr.phoneuid
 
 .PHONY: all clean check docs xml
 
