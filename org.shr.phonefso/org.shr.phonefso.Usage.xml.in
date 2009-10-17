@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<node name="/" xmlns:fso="http://www.freesmartphone.org/schemas/DBusSpecExtension" xmlns:doc="http://www.freedesktop.org/dbus/1.0/doc.dtd" doc:id="shr-phonefso-usage-interface">
+
+<doc:doc>
+  <doc:summary>SHR phonefso Usage Interface</doc:summary>
+  <doc:version>0.0.0.1</doc:version>
+</doc:doc>
+
+<interface name="org.shr.phonefso.Usage">
+	<method name="RegisterUiHandler">
+		<annotation name="org.freedesktop.DBus.GLib.Async" value="true"/>
+		<arg type="s" name="session_bus" direction="in"/>
+	</method>
+	<method name="RequestResource">
+		<annotation name="org.freedesktop.DBus.GLib.Async" value="true"/>
+		<arg type="s" name="resource" direction="in" />
+	</method>
+	<method name="ReleaseResource">
+		<annotation name="org.freedesktop.DBus.GLib.Async" value="true"/>
+		<arg type="s" name="resource" direction="in" />
+	</method>
+	<method name="GetResourceState">
+		<annotation name="org.freedesktop.DBus.GLib.Async" value="true"/>
+		<arg type="s" name="resource" direction="in" />
+		<arg type="b" name="state" direction="out" />
+	</method>
+</interface>
+</node>
+

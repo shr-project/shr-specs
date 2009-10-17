@@ -1,4 +1,4 @@
-SUBDIRS := org.shr.phoneuid
+SUBDIRS := org.shr.phoneui org.shr.phonefso
 
 .PHONY: all clean check docs xml
 

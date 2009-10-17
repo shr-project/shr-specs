@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "//OASIS//DTD DocBook XML V4.3//EN" "http://www.oasis-open.org/docbook/xml/4.3/docbookx.dtd">
+<reference id="shr-phonefso-usage-interface">
+  <title>SHR phonefso Usage Interface</title>
+  <refentry id="Usage">
+    <refmeta>
+      <refentrytitle role="top_of_page">org.shr.phonefso.Usage</refentrytitle>
+    </refmeta>
+    <refnamediv>
+      <refname>org.shr.phonefso.Usage</refname>
+      <refpurpose>Usage interface</refpurpose>
+    </refnamediv>
+    <refsynopsisdiv role="synopsis">
+      <title role="synopsis.title">Methods</title>
+      <synopsis><link linkend="Usage.RegisterUiHandler">RegisterUiHandler</link> (in  's'session_bus)
+<link linkend="Usage.RequestResource">RequestResource</link>   (in  's'resource)
+<link linkend="Usage.ReleaseResource">ReleaseResource</link>   (in  's'resource)
+<link linkend="Usage.GetResourceState">GetResourceState</link>  (in  's'resource,
+                   out 'b'state)
+</synopsis>
+    </refsynopsisdiv>
+    <refsect1 role="impl_interfaces">
+      <title role="impl_interfaces.title">Implemented Interfaces</title>
+      <para>org.shr.phonefso.Usage implements
+    org.freedesktop.DBus.Introspectable,
+    org.freedesktop.DBus.Properties
+    </para>
+    </refsect1>
+    <refsect1 role="properties">
+      <title role="properties.title">Properties</title>
+      <synopsis/>
+    </refsect1>
+    <refsect1 role="details">
+      <title role="details.title">Details</title>
+      <refsect2>
+        <title><anchor role="function" id="Usage.RegisterUiHandler"/>RegisterUiHandler ()</title>
+        <indexterm>
+          <primary>RegisterUiHandler</primary>
+          <secondary>Usage</secondary>
+        </indexterm>
+        <programlisting>RegisterUiHandler (in  's' session_bus)</programlisting>
+        <variablelist role="params">
+          <varlistentry>
+            <term><parameter>session_bus</parameter>:</term>
+            <listitem>
+              <para/>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </refsect2>
+      <refsect2>
+        <title><anchor role="function" id="Usage.RequestResource"/>RequestResource ()</title>
+        <indexterm>
+          <primary>RequestResource</primary>
+          <secondary>Usage</secondary>
+        </indexterm>
+        <programlisting>RequestResource (in  's' resource)</programlisting>
+        <variablelist role="params">
+          <varlistentry>
+            <term><parameter>resource</parameter>:</term>
+            <listitem>
+              <para/>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </refsect2>
+      <refsect2>
+        <title><anchor role="function" id="Usage.ReleaseResource"/>ReleaseResource ()</title>
+        <indexterm>
+          <primary>ReleaseResource</primary>
+          <secondary>Usage</secondary>
+        </indexterm>
+        <programlisting>ReleaseResource (in  's' resource)</programlisting>
+        <variablelist role="params">
+          <varlistentry>
+            <term><parameter>resource</parameter>:</term>
+            <listitem>
+              <para/>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </refsect2>
+      <refsect2>
+        <title><anchor role="function" id="Usage.GetResourceState"/>GetResourceState ()</title>
+        <indexterm>
+          <primary>GetResourceState</primary>
+          <secondary>Usage</secondary>
+        </indexterm>
+        <programlisting>GetResourceState (in  's' resource,
+                  out 'b' state)</programlisting>
+        <variablelist role="params">
+          <varlistentry>
+            <term><parameter>resource</parameter>:</term>
+            <listitem>
+              <para/>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term><parameter>state</parameter>:</term>
+            <listitem>
+              <para/>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </refsect2>
+    </refsect1>
+  </refentry>
+</reference>

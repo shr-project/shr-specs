@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<node name="/" xmlns:fso="http://www.freesmartphone.org/schemas/DBusSpecExtension" xmlns:doc="http://www.freedesktop.org/dbus/1.0/doc.dtd" doc:id="shr-phoneui-contacts-interface">
+
+<doc:doc>
+  <doc:summary>SHR phoneui Contacts Interface</doc:summary>
+  <doc:version>0.0.0.1</doc:version>
+</doc:doc>
+
+<interface name="org.shr.phoneui.Contacts">
+	<doc:doc>
+		<doc:para>
+			The Contacts Interface is used to show the different contact screens to show a list of contacts, 
+			a contact itself, edit or add a contact.
+		</doc:para>
+	</doc:doc>
+
+	<method name="DisplayList">
+		<annotation name="org.freedesktop.DBus.GLib.Async" value="true" />
+		<arg type="a{sv}" name="filter" direction="in">
+			<doc:doc>
+				<doc:summary>
+					List of filter attributes to limit the
+					list of contacts to be shown.
+				</doc:summary>
+			</doc:doc>
+		</arg>
+	</method>
+	<method name="DisplayContact">
+		<annotation name="org.freedesktop.DBus.Glib.Async" value="true" />
+		<arg type="s" name="path" direction="in">
+			<doc:doc>
+				<doc:summary>
+					the DBus path of the contact to show
+				</doc:summary>
+			</doc:doc>
+		</arg>
+	</method>
+	<method name="CreateContact">
+		<arg type="a{sv}" name="values" direction="in">
+			<doc:doc>
+				<doc:summary>
+					Values to be prefilled for the new contact
+				</doc:summary>
+			</doc:doc>
+		</arg>
+		<arg type="s" name="path" direction="out">
+			<doc:doc>
+				<doc:summary>
+					the DBus path of the freshly created contact
+				</doc:summary>
+			</doc:doc>
+		</arg>
+	</method>
+	<method name="EditContact">
+		<arg type="s" name="path" direction="in">
+			<doc:doc>
+				<doc:summary>
+					the DBus path for the contact to be edited
+				</doc:summary>
+			</doc:doc>
+		</arg>
+
+	</method>
+</interface>
+</node>

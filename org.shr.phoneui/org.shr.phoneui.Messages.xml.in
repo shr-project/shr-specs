@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<node name="/" xmlns:fso="http://www.freesmartphone.org/schemas/DBusSpecExtension" xmlns:doc="http://www.freedesktop.org/dbus/1.0/doc.dtd" doc:id="shr-phoneui-messages-interface">
+
+<doc:doc>
+  <doc:summary>SHR phoneui Messages Interface</doc:summary>
+  <doc:version>0.0.0.1</doc:version>
+</doc:doc>
+
+<interface name="org.shr.phoneui.Messages">
+	<doc:doc>
+		<doc:para>
+			The Messages Interface is used to show the different
+			message screens, as the list of messages, a message
+			itself or a screen to write a new message.
+		</doc:para>
+	</doc:doc>
+
+	<method name="DisplayList">
+		<arg type="a{sv}" name="filter" direction="in">
+			<doc:doc>
+				<doc:summary>
+					List of filter attributes to limit the
+					list of messages to be shown.
+				</doc:summary>
+			</doc:doc>
+		</arg>
+	</method>
+
+	<method name="DisplayItem">
+		<arg type="s" name="path" direction="in">
+			<doc:doc>
+				<doc:summary>
+					the DBus path of the message to show
+				</doc:summary>
+			</doc:doc>
+		</arg>
+	</method>
+	<method name="CreateMessage">
+		<arg type="a{sv}" name="values" direction="in">
+			<doc:doc>
+				<doc:summary>
+					Values to be prefilled for the new
+					message
+				</doc:summary>
+			</doc:doc>
+		</arg>
+	</method>
+</interface>
+</node>
+
