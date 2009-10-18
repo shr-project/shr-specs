@@ -16,6 +16,7 @@
 	</doc:doc>
 
 	<method name="DisplayList">
+		<annotation name="org.freedesktop.DBus.GLib.Async" value="true" />
 		<arg type="a{sv}" name="filter" direction="in">
 			<doc:doc>
 				<doc:summary>

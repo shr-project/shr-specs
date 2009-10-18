@@ -16,6 +16,7 @@
 	</doc:doc>
 
 	<method name="DisplayList">
+		<annotation name="org.freedesktop.DBus.GLib.Async" value="true" />
 		<arg type="a{sv}" name="filter" direction="in">
 			<doc:doc>
 				<doc:summary>
@@ -27,6 +28,7 @@
 	</method>
 
 	<method name="DisplayItem">
+		<annotation name="org.freedesktop.DBus.GLib.Async" value="true" />
 		<arg type="s" name="path" direction="in">
 			<doc:doc>
 				<doc:summary>
@@ -36,6 +38,7 @@
 		</arg>
 	</method>
 	<method name="CreateMessage">
+		<annotation name="org.freedesktop.DBus.GLib.Async" value="true" />
 		<arg type="a{sv}" name="values" direction="in">
 			<doc:doc>
 				<doc:summary>

@@ -8,19 +8,23 @@
 
 <interface name="org.shr.phoneui.CallManagement">
 	<method name="DisplayIncoming">
+		<annotation name="org.freedesktop.DBus.GLib.Async" value="true" />
 		<arg type="i" name="call_id" direction="in"></arg>
 		<arg type="i" name="status" direction="in"></arg>
 		<arg type="s" name="number" direction="in"></arg>
 	</method>
 	<method name="HideIncoming">
+		<annotation name="org.freedesktop.DBus.GLib.Async" value="true" />
 		<arg type="i" name="call_id" direction="in"></arg>
 	</method>
 	<method name="DisplayOutgoing">
+		<annotation name="org.freedesktop.DBus.GLib.Async" value="true" />
 		<arg type="i" name="call_id" direction="in"></arg>
 		<arg type="i" name="status" direction="in"></arg>
 		<arg type="s" name="number" direction="in"></arg>
 	</method>
 	<method name="HideOutgoing">
+		<annotation name="org.freedesktop.DBus.GLib.Async" value="true" />
 		<arg type="i" name="call_id" direction="in"></arg>
 	</method>
 </interface>
