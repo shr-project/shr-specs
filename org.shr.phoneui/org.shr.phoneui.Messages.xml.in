@@ -27,7 +27,7 @@
 		</arg>
 	</method>
 
-	<method name="DisplayItem">
+	<method name="DisplayMessage">
 		<annotation name="org.freedesktop.DBus.GLib.Async" value="true" />
 		<arg type="s" name="path" direction="in">
 			<doc:doc>
