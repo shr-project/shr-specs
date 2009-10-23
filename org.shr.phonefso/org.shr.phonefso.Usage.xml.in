@@ -7,10 +7,6 @@
 </doc:doc>
 
 <interface name="org.shr.phonefso.Usage">
-	<method name="RegisterUiHandler">
-		<annotation name="org.freedesktop.DBus.GLib.Async" value="true"/>
-		<arg type="s" name="session_bus" direction="in"/>
-	</method>
 	<method name="RequestResource">
 		<annotation name="org.freedesktop.DBus.GLib.Async" value="true"/>
 		<arg type="s" name="resource" direction="in" />
