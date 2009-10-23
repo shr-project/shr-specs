@@ -3,12 +3,15 @@
 <node name="/">
   <interface name="org.shr.phoneui.Messages">
     <method name="DisplayList">
+      <annotation name="org.freedesktop.DBus.GLib.Async" value="true"/>
       <arg type="a{sv}" name="filter" direction="in"/>
     </method>
-    <method name="DisplayItem">
+    <method name="DisplayMessage">
+      <annotation name="org.freedesktop.DBus.GLib.Async" value="true"/>
       <arg type="s" name="path" direction="in"/>
     </method>
     <method name="CreateMessage">
+      <annotation name="org.freedesktop.DBus.GLib.Async" value="true"/>
       <arg type="a{sv}" name="values" direction="in"/>
     </method>
   </interface>

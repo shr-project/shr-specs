@@ -2,10 +2,6 @@
 <!DOCTYPE node PUBLIC "-//freedesktop//DTD D-BUS Object Introspection 1.0//EN" "http://www.freedesktop.org/standards/dbus/1.0/introspect.dtd">
 <node name="/">
   <interface name="org.shr.phonefso.Usage">
-    <method name="RegisterUiHandler">
-      <annotation name="org.freedesktop.DBus.GLib.Async" value="true"/>
-      <arg type="s" name="session_bus" direction="in"/>
-    </method>
     <method name="RequestResource">
       <annotation name="org.freedesktop.DBus.GLib.Async" value="true"/>
       <arg type="s" name="resource" direction="in"/>

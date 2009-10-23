@@ -12,9 +12,9 @@
     </refnamediv>
     <refsynopsisdiv role="synopsis">
       <title role="synopsis.title">Methods</title>
-      <synopsis><link linkend="Messages.DisplayList">DisplayList</link>   (in  'a{sv}'filter)
-<link linkend="Messages.DisplayItem">DisplayItem</link>   (in  's'path)
-<link linkend="Messages.CreateMessage">CreateMessage</link> (in  'a{sv}'values)
+      <synopsis><link linkend="Messages.DisplayList">DisplayList</link>    (in  'a{sv}'filter)
+<link linkend="Messages.DisplayMessage">DisplayMessage</link> (in  's'path)
+<link linkend="Messages.CreateMessage">CreateMessage</link>  (in  'a{sv}'values)
 </synopsis>
     </refsynopsisdiv>
     <refsect1 role="impl_interfaces">
@@ -50,12 +50,12 @@
         </variablelist>
       </refsect2>
       <refsect2>
-        <title><anchor role="function" id="Messages.DisplayItem"/>DisplayItem ()</title>
+        <title><anchor role="function" id="Messages.DisplayMessage"/>DisplayMessage ()</title>
         <indexterm>
-          <primary>DisplayItem</primary>
+          <primary>DisplayMessage</primary>
           <secondary>Messages</secondary>
         </indexterm>
-        <programlisting>DisplayItem (in  's' path)</programlisting>
+        <programlisting>DisplayMessage (in  's' path)</programlisting>
         <variablelist role="params">
           <varlistentry>
             <term><parameter>path</parameter>:</term>

@@ -3,16 +3,20 @@
 <node name="/">
   <interface name="org.shr.phoneui.Notification">
     <method name="DisplaySimAuth">
+      <annotation name="org.freedesktop.DBus.GLib.Async" value="true"/>
       <arg type="i" name="status" direction="in"/>
     </method>
     <method name="HideSimAuth">
+      <annotation name="org.freedesktop.DBus.GLib.Async" value="true"/>
       <arg type="i" name="status" direction="in"/>
     </method>
     <method name="DisplayUssd">
+      <annotation name="org.freedesktop.DBus.GLib.Async" value="true"/>
       <arg type="i" name="mode" direction="in"/>
       <arg type="s" name="message" direction="in"/>
     </method>
     <method name="DisplayDialog">
+      <annotation name="org.freedesktop.DBus.GLib.Async" value="true"/>
       <arg type="i" name="dialog" direction="in"/>
     </method>
   </interface>

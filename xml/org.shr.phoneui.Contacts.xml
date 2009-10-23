@@ -11,10 +11,12 @@
       <arg type="s" name="path" direction="in"/>
     </method>
     <method name="CreateContact">
+      <annotation name="org.freedesktop.DBus.GLib.Async" value="true"/>
       <arg type="a{sv}" name="values" direction="in"/>
       <arg type="s" name="path" direction="out"/>
     </method>
     <method name="EditContact">
+      <annotation name="org.freedesktop.DBus.GLib.Async" value="true"/>
       <arg type="s" name="path" direction="in"/>
     </method>
   </interface>
