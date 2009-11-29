@@ -24,6 +24,11 @@
 		<annotation name="org.freedesktop.DBus.GLib.Async" value="true" />
 		<arg type="i" name="dialog" direction="in"></arg>
 	</method>
+	<method name="FeedbackAction">
+		<annotation name="org.freedesktop.DBus.GLib.Async" value="true" />
+		<arg type="s" name="action" direction="in"></arg>
+		<arg type="s" name="level" direction="in"></arg>
+	</method>
 </interface>
 </node>
 
