@@ -5,7 +5,9 @@ files = \
 	org.shr.phoneui.CallManagement.xml \
 	org.shr.phoneui.Notification.xml \
 	org.shr.phoneui.Messages.xml \
-	org.shr.phoneui.PhoneLog.xml
+	org.shr.phoneui.PhoneLog.xml \
+	org.shr.phoneui.IdleScreen.xml \
+	org.shr.phoneui.Settings.xml
 
 include ../tools/rules.mk
 

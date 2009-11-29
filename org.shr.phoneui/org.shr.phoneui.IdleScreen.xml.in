@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<node name="/" xmlns:fso="http://www.freesmartphone.org/schemas/DBusSpecExtension" xmlns:doc="http://www.freedesktop.org/dbus/1.0/doc.dtd" doc:id="shr-phoneui-idlescreen-interface">
+
+<doc:doc>
+  <doc:summary>SHR phoneui IdleScreen Interface</doc:summary>
+  <doc:version>0.0.0.1</doc:version>
+</doc:doc>
+
+<interface name="org.shr.phoneui.IdleScreen">
+	<method name="Display">
+		<annotation name="org.freedesktop.DBus.GLib.Async" value="true" />
+	</method>
+	<method name="Hide">
+		<annotation name="org.freedesktop.DBus.GLib.Async" value="true" />
+	</method>
+</interface>
+</node>
+
