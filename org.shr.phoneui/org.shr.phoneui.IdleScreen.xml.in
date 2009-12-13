@@ -13,6 +13,9 @@
 	<method name="Hide">
 		<annotation name="org.freedesktop.DBus.GLib.Async" value="true" />
 	</method>
+	<method name="ActivateScreensaver">
+		<annotation name="org.freedesktop.DBus.GLib.Async" value="true" />
+	</method>
 </interface>
 </node>
 
