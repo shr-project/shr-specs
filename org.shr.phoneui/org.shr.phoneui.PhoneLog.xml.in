@@ -15,8 +15,16 @@
 		</doc:para>
 	</doc:doc>
 
-	<method name="Display">
+	<method name="DisplayList">
 		<annotation name="org.freedesktop.DBus.GLib.Async" value="true" />
+		<arg type="a{sv}" name="filter" direction="in">
+			<doc:doc>
+				<doc:summary>
+					List of filter attributes to limit the
+					list of calls to be shown.
+				</doc:summary>
+			</doc:doc>
+		</arg>
 	</method>
 </interface>
 </node>
