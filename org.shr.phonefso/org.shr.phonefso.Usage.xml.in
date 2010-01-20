@@ -20,6 +20,14 @@
 		<arg type="s" name="resource" direction="in" />
 		<arg type="b" name="state" direction="out" />
 	</method>
+	<method name="SetOfflineMode">
+		<annotation name="org.freedesktop.DBus.GLib.Async" value="true"/>
+		<arg type="b" name="state" direction="in" />
+	</method>
+	<method name="GetOfflineMode">
+		<annotation name="org.freedesktop.DBus.GLib.Async" value="true"/>
+		<arg type="b" name="state" direction="out" />
+	</method>
 </interface>
 </node>
 
