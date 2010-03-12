@@ -28,6 +28,14 @@
 		<annotation name="org.freedesktop.DBus.GLib.Async" value="true"/>
 		<arg type="b" name="state" direction="out" />
 	</method>
+	<method name="SetDefaultBrightness">
+		<annotation name="org.freedesktop.DBus.GLib.Async" value="true"/>
+		<arg type="i" name="brightness" direction="in" />
+	</method>
+	<method name="GetDefaultBrightness">
+		<annotation name="org.freedesktop.DBus.GLib.Async" value="true"/>
+		<arg type="i" name="brightness" direction="out" />
+	</method>
 </interface>
 </node>
 
