@@ -10,5 +10,8 @@
 	<method name="DisplayQuickSettings">
 		<annotation name="org.freedesktop.DBus.GLib.Async" value="true" />
 	</method>
+	<method name="DisplaySimManager">
+		<annotation name="org.freedesktop.DBus.GLib.Async" value="true" />
+	</method>
 </interface>
 </node>
