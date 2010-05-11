@@ -36,6 +36,12 @@
 		<annotation name="org.freedesktop.DBus.GLib.Async" value="true"/>
 		<arg type="i" name="brightness" direction="out" />
 	</method>
+	<method name="SetPdpCredentials">
+		<annotation name="org.freedesktop.DBus.GLib.Async" value="true"/>
+		<arg type="s" name="apn" direction="in"/>
+		<arg type="s" name="user" direction="in"/>
+		<arg type="s" name="password" direction="in"/>
+	</method>
 </interface>
 </node>
 
