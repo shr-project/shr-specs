@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<node name="/" xmlns:fso="http://www.freesmartphone.org/schemas/DBusSpecExtension" xmlns:doc="http://www.freedesktop.org/dbus/1.0/doc.dtd" doc:id="shr-phoneui-settings-interface">
+
+<doc:doc>
+  <doc:summary>SHR phoneui Calendar Interface</doc:summary>
+  <doc:version>0.0.0.1</doc:version>
+</doc:doc>
+
+
+<interface name="org.shr.phoneui.Calendar">
+	<doc:doc>
+		<doc:para>
+			The Calendar Interface is used to show the different calendar screens to show a list of dates, 
+			a date itself, edit or add a date.
+		</doc:para>
+	</doc:doc>
+
+	<method name="DisplayMonth">
+		<annotation name="org.freedesktop.DBus.GLib.Async" value="true" />
+		<arg type="i" name="month" direction="in">
+			<doc:doc>
+				<doc:summary>
+					a timestamp from the month to show
+				</doc:summary>
+			</doc:doc>
+		</arg>
+	</method>
+	<method name="DisplayDay">
+		<annotation name="org.freedesktop.DBus.Glib.Async" value="true" />
+		<arg type="s" name="day" direction="in">
+			<doc:doc>
+				<doc:summary>
+					the day to show
+				</doc:summary>
+			</doc:doc>
+		</arg>
+	</method>
+		<method name="DisplayDate">
+		<annotation name="org.freedesktop.DBus.Glib.Async" value="true" />
+		<arg type="s" name="path" direction="in">
+			<doc:doc>
+				<doc:summary>
+					the DBus path of the contact to show
+				</doc:summary>
+			</doc:doc>
+		</arg>
+	</method>
+	<method name="CreateDate">
+		<annotation name="org.freedesktop.DBus.GLib.Async" value="true" />
+		<arg type="a{sv}" name="values" direction="in">
+			<doc:doc>
+				<doc:summary>
+					Values to be prefilled for the new date
+				</doc:summary>
+			</doc:doc>
+		</arg>
+		<arg type="s" name="path" direction="out">
+			<doc:doc>
+				<doc:summary>
+					the DBus path of the freshly created contact
+				</doc:summary>
+			</doc:doc>
+		</arg>
+	</method>
+</interface>
+</node>
