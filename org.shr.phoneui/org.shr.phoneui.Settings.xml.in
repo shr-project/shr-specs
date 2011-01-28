@@ -13,5 +13,13 @@
 	<method name="DisplaySimManager">
 		<annotation name="org.freedesktop.DBus.GLib.Async" value="true" />
 	</method>
+	<method name="SetMessageReceipt">
+		<annotation name="org.freedesktop.DBus.GLib.Async" value="true" />
+		<arg type="b" name="message_receipt" direction="in" />
+	</method>
+	<method name="GetMessageReceipt">
+		<annotation name="org.freedesktop.DBus.GLib.Async" value="true" />
+		<arg type="b" name="message_receipt" direction="out" />
+	</method>
 </interface>
 </node>
