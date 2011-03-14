@@ -1,6 +1,6 @@
 ##############################################################################
 # init
-AC_INIT([shr-specs], [2011.03.14.1], [shr-devel@lists.shr-project.org], [shr-specs])
+AC_INIT([shr-specs], [2011.03.08.2], [shr-devel@lists.shr-project.org], [shr-specs])
 AC_CONFIG_SRCDIR([tools/rules.mk])
 AM_INIT_AUTOMAKE([-Wall -Werror foreign no-dist-gzip dist-bzip2])
 m4_ifdef([AM_SILENT_RULES], [AM_SILENT_RULES([yes])])
